@@ -21,7 +21,7 @@ function SEO({ description, lang, meta, title, ogImage }) {
             author
           }
         }
-        defaultOgImage: file(relativePath: { eq: "kapitbisig.png" }) {
+        defaultOgImage: file(relativePath: { eq: "kapitbisig-cover.png" }) {
           childImageSharp {
             original {
               src
