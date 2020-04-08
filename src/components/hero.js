@@ -28,8 +28,11 @@ export default class hero extends Component {
                 </Content>
                 <Content>
                   Community care and mutual aid are the best way for us to
-                  overcome the hardship caused by COVID-19. That is why we've
-                  organized Kapitbisig Laban COVID, a mutual aid network.
+                  overcome the hardship caused by COVID-19.{" "}
+                  <b>
+                    That is why we've organized Kapitbisig COVID Response, a
+                    mutual aid network.
+                  </b>
                 </Content>
 
                 {/* Call to action button */}
