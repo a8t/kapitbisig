@@ -9,76 +9,97 @@ import {
   Content,
   Button,
   Icon,
+  Card,
+  CardHeader,
+  CardContent,
+  Columns,
+  CardHeaderTitle,
 } from "bloomer"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Hero from "../components/hero"
+import { RequestAid, Volunteer } from "../components/callToAction"
 
 const IndexPage = ({ data }) => {
   const page = data.site.siteMetadata
   return (
     <Layout>
-      <SEO title="Home" />
+      <SEO title="Kapitbisig" />
       <Hero siteTitle={page.title} description={page.description} />
       <Section>
         <Container>
-          {/* Intro section  */}
-          <Column isSize="2/3">
-            <Title>Welcome to your Gatsby site</Title>
-            <Content>
+          <Title>How does it work?</Title>
+
+          <Columns>
+            <Column isSize="1/2">
               <p>
-                This barebones starter ships with the main{" "}
-                <strong>Gatsby + Bloomer</strong> configuration files you might
-                need. Configured with only the <strong>bare minimums</strong>{" "}
-                needed to get your site started.
+                To sign up for the Kapitbisig COVID Response mutual aid network,
+                you can fill out one of the two forms below.
               </p>
-              {/* List of features */}
-              <ul id="list-unstyled">
-                <li>
-                  <Icon
-                    className="fab fa-sass fa-lg has-text-primary"
-                    id="feature-icon"
-                  />
-                  Sass Ready
-                </li>
-                <li>
-                  <Icon
-                    className="fas fa-icons fa-lg has-text-primary"
-                    id="feature-icon"
-                  />
-                  Font Awesome Icons
-                </li>
-                <li>
-                  <Icon
-                    className="fas fa-tachometer-alt fa-lg has-text-primary"
-                    id="feature-icon"
-                  />
-                  Progressive Web App
-                </li>
-                <li>
-                  <Icon
-                    className="fas fa-caret-square-down fa-lg has-text-primary"
-                    id="feature-icon"
-                  />
-                  Sticky Footer
-                </li>
-              </ul>
-              {/* Navigate to page 2 */}
-              <p>
-                <Link to="/page-2/">
-                  <Button
-                    isColor="primary"
-                    className="is-rounded"
-                    id="btn-spaced"
-                  >
-                    <span>Go to page 2</span>
-                    <Icon className="fa fa-arrow-right fa-sm" />
-                  </Button>
-                </Link>
-              </p>
-            </Content>
-          </Column>
+            </Column>
+          </Columns>
+
+          <Columns>
+            <Column isSize="1/2">
+              <Card>
+                <CardHeader>
+                  <CardHeaderTitle>I need help</CardHeaderTitle>
+                </CardHeader>
+                <CardContent>
+                  <Content>
+                    I'm going through some hard times. I'm struggling
+                    financially, emotionally, or physically. I'm facing loss of
+                    work or other hardship.
+                    <div style={{ marginTop: 16 }}></div>
+                    <RequestAid isColor="primary" />
+                  </Content>
+                </CardContent>
+              </Card>
+            </Column>
+            <Column isSize="1/2">
+              <Card>
+                <CardHeader>
+                  <CardHeaderTitle>I want to help</CardHeaderTitle>
+                </CardHeader>
+                <CardContent>
+                  <Content>
+                    I have additional means. I can offer time, resources,
+                    skills, or knowledge. I want to give back to my community.
+                    <div style={{ marginTop: 16 }}></div>
+                    <Volunteer isColor="primary" />
+                  </Content>
+                </CardContent>
+              </Card>
+            </Column>
+          </Columns>
+
+          <Title>Who are we?</Title>
+          <Content>
+            <Columns>
+              <Column isSize="1/2">
+                <p>
+                  We are a group of Filipinos, allies, and concerned community
+                  members. We are women, youth, students, migrants, workers,
+                  professionals, and church people.{" "}
+                  <b>We knew that we would have to come together</b> to weather
+                  the storm of the COVID-19 pandemic.
+                </p>
+                <p>
+                  Kapitbisig COVID Response is an effort initiated by BAYAN
+                  Canada in Toronto (including member organizations Migrante
+                  Ontario, Anakbayan Toronto, and GABRIELA Ontario) and Toronto
+                  Committee for Human Rights in the Philippines (TCHRP).
+                </p>
+                <p>
+                  These organizations support the democratic people's movement
+                  in the Philippines. We connect the struggles of the Filipino
+                  people back home to the struggles of migrant and diasporic
+                  Filipinos overseas.
+                </p>
+              </Column>
+            </Columns>
+          </Content>
 
           {/* Features section begins */}
         </Container>

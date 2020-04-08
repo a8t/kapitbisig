@@ -13,6 +13,7 @@ import {
   Icon,
   Button,
 } from "bloomer"
+import CallToAction from "./callToAction"
 
 export default class navbar extends Component {
   static propTypes = {
@@ -54,24 +55,15 @@ export default class navbar extends Component {
                 Home
               </Link>
               <Link
-                to="/page-2"
+                to="/resources"
                 activeClassName="is-active"
                 className="navbar-link nav-item is-arrowless"
               >
-                Page 2
+                Resources
               </Link>
               {/* Github download button */}
               <NavbarItem>
-                <Button
-                  href="https://github.com/zlutfi/gatsby-starter-bloomer"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="is-rounded"
-                  isSize="small"
-                >
-                  <span>Download on Github</span>
-                  <Icon className="fab fa-github fa-sm" />
-                </Button>
+                <CallToAction />
               </NavbarItem>
             </NavbarEnd>
           </NavbarMenu>

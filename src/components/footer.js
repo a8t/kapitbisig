@@ -8,46 +8,20 @@ const MainFooter = () => {
         {/* Built by ZLI */}
         <Content>
           <p>
-            Made with{" "}
-            <Icon hasTextColor="danger" className="fa fa-heart"></Icon> by{" "}
+            Kapitbisig is a project of{" "}
             <a
-              href="https://zlicreative.com"
+              href="https://www.facebook.com/BAYANCanada/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              ZLI Creative
+              BAYAN Canada
             </a>
+            .
           </p>
         </Content>
         {/* Built with Gatsby, Bulma, and Bloomer */}
         <Content isSize="small">
-          <p>
-            © {new Date().getFullYear()}, Built with
-            {` `}
-            <a
-              href="https://www.gatsbyjs.org"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Gatsby
-            </a>
-            ,{" "}
-            <a
-              href="https://bulma.io"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Bulma
-            </a>{" "}
-            and{" "}
-            <a
-              href="https://bloomer.js.org"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Bloomer Components
-            </a>{" "}
-          </p>
+          <p>© {new Date().getFullYear()}</p>
         </Content>
       </Container>
     </Footer>

@@ -16,14 +16,17 @@ import SEO from "../components/seo"
 
 const SecondPage = () => (
   <Layout>
-    <SEO title="Page two" />
+    <SEO title="Resources" />
     <Section className="has-background-white">
       <Container>
         <Columns>
           <Column>
             {/* Page title */}
-            <Title isSpaced>Page 2</Title>
-            <Subtitle>This is the second page.</Subtitle>
+            <Title isSpaced>Resources</Title>
+            <Subtitle>
+              This page is under construction. Check back later for info on EI,
+              CERB, employment and migration rights, and more.
+            </Subtitle>
             {/* Back to homepage button */}
             <Link to="/">
               <Button isColor="primary" className="is-rounded" id="is-spaced">
