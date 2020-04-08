@@ -10,8 +10,8 @@ import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
-function SEO({ description, lang, meta, title }) {
-  const { site } = useStaticQuery(
+function SEO({ description, lang, meta, title, ogImage }) {
+  const { site, defaultOgImage } = useStaticQuery(
     graphql`
       query {
         site {
@@ -19,6 +19,13 @@ function SEO({ description, lang, meta, title }) {
             title
             description
             author
+          }
+        }
+        defaultOgImage: file(relativePath: { eq: "kapitbisig.png" }) {
+          childImageSharp {
+            original {
+              src
+            }
           }
         }
       }
@@ -42,6 +49,10 @@ function SEO({ description, lang, meta, title }) {
         {
           property: `og:title`,
           content: title,
+        },
+        {
+          property: `og:image`,
+          content: ogImage || defaultOgImage.childImageSharp.original.src,
         },
         {
           property: `og:description`,
