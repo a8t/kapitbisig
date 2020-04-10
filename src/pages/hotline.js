@@ -33,7 +33,7 @@ const About = () => (
                 <a href="https://www.migrantsresourcecentre.ca">
                   Migrants Resource Centre Canada
                 </a>{" "}
-                to offer a completely 24/7, volunteer-operated hotline.
+                to offer a 24/7, completely volunteer-operated hotline.
               </p>
 
               <p>
