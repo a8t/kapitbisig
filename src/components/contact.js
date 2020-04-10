@@ -11,11 +11,31 @@ import {
   Box,
 } from "bloomer"
 
+const BoldLink = props => <a style={{ fontWeight: "bold" }} {...props} />
+
 export default function ContactForm() {
   return (
-    <Box>
+    <>
       <Subtitle>Contact Us</Subtitle>
 
+      <p>
+        If you have urgent inquiries, please contact us at our{" "}
+        <Link to="/hotline" style={{ fontWeight: "bold" }}>
+          24/7 volunteer hotline
+        </Link>
+        .
+      </p>
+      <p>
+        If you have questions or inquiries outside of our{" "}
+        <BoldLink href="https://bit.ly/kapitbisigto-needs">
+          help request form
+        </BoldLink>{" "}
+        or our{" "}
+        <BoldLink href="https://bit.ly/kapitbisigto-volunteer">
+          volunteer signup form
+        </BoldLink>
+        , please continue to fill out the form below.
+      </p>
       <form
         name="contact"
         method="post"
@@ -28,7 +48,12 @@ export default function ContactForm() {
           <Label>Your name</Label>
 
           <Control>
-            <Input isColor="primary" type="text" placeholder="Name" />
+            <Input
+              isColor="primary"
+              type="text"
+              placeholder="Name"
+              name="name"
+            />
           </Control>
         </Field>
 
@@ -39,6 +64,7 @@ export default function ContactForm() {
               isColor="primary"
               type="text"
               placeholder="name@example.com"
+              name="email"
             />
           </Control>
         </Field>
@@ -46,16 +72,22 @@ export default function ContactForm() {
         <Field>
           <Label>Message</Label>
           <Control>
-            <TextArea className={"is-primary"} placeholder="Your message" />
+            <TextArea
+              className={"is-primary"}
+              placeholder="Your message"
+              name="message"
+            />
           </Control>
         </Field>
 
         <Field>
           <Control>
-            <Button isColor="success">Submit</Button>
+            <Button isColor="success" type="submit">
+              Submit
+            </Button>
           </Control>
         </Field>
       </form>
-    </Box>
+    </>
   )
 }
