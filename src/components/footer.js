@@ -8,7 +8,7 @@ const MainFooter = () => {
         {/* Built by ZLI */}
         <Content>
           <p>
-            Kapitbisig is a project of{" "}
+            Kapit-Bisig Laban COVID is a project of{" "}
             <a
               href="https://www.facebook.com/BAYANCanada/"
               target="_blank"

@@ -25,7 +25,7 @@ const IndexPage = ({ data }) => {
   const page = data.site.siteMetadata
   return (
     <Layout>
-      <SEO title="Kapitbisig" />
+      <SEO title="Kapit-Bisig" />
       <Hero siteTitle={page.title} description={page.description} />
       <Section>
         <Container>
@@ -34,8 +34,8 @@ const IndexPage = ({ data }) => {
           <Columns>
             <Column isSize="1/2">
               <p>
-                To sign up for the Kapitbisig COVID Response mutual aid network,
-                you can fill out one of the two forms below.
+                To sign up for the Kapit-Bisig COVID Response mutual aid
+                network, you can fill out one of the two forms below.
               </p>
             </Column>
           </Columns>
@@ -86,10 +86,10 @@ const IndexPage = ({ data }) => {
                   the storm of the COVID-19 pandemic.
                 </p>
                 <p>
-                  Kapitbisig COVID Response is an effort initiated by BAYAN
-                  Canada in Toronto (including member organizations Migrante
-                  Ontario, Anakbayan Toronto, and GABRIELA Ontario) and Toronto
-                  Committee for Human Rights in the Philippines (TCHRP).
+                  Kapit-Bisig Laban COVID is an effort initiated by BAYAN Canada
+                  in Toronto (including member organizations Migrante Ontario,
+                  Anakbayan Toronto, and GABRIELA Ontario) and Toronto Committee
+                  for Human Rights in the Philippines (TCHRP).
                 </p>
                 <p>
                   These organizations support the democratic people's movement

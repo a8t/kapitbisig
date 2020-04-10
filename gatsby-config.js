@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Kapitbisig COVID Response Toronto`,
+    title: `Kapit-Bisig Laban COVID Toronto`,
     description: `We're in this together. We're here for each other.`,
     author: `@zlidev`,
   },
