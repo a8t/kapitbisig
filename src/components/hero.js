@@ -42,11 +42,14 @@ const KapitBisigHero = ({ siteTitle, description }) => {
         <Container>
           <Columns>
             <Column isSize="1/2">
-              <Img fluid={logo.childImageSharp.fluid} style={{ width: 400 }} />
-            </Column>{" "}
+              <Img
+                fluid={logo.childImageSharp.fluid}
+                style={{ width: 400, maxWidth: "100%" }}
+              />
+            </Column>
             <Column isSize="1/2">
               {/* Headline */}
-              <Title>{description}</Title>
+              <Title style={{ marginTop: 32 }}>{description}</Title>
 
               <Content>Kapit-Bisig means "linking arms" in Tagalog.</Content>
               <Content>
