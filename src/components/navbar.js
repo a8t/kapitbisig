@@ -55,6 +55,13 @@ export default class navbar extends Component {
                 Home
               </Link>
               <Link
+                to="/about"
+                activeClassName="is-active"
+                className="navbar-link nav-item is-arrowless"
+              >
+                About
+              </Link>
+              <Link
                 to="/resources"
                 activeClassName="is-active"
                 className="navbar-link nav-item is-arrowless"

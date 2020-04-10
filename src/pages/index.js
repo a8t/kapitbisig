@@ -74,33 +74,6 @@ const IndexPage = ({ data }) => {
             </Column>
           </Columns>
 
-          <Title>Who are we?</Title>
-          <Content>
-            <Columns>
-              <Column isSize="1/2">
-                <p>
-                  We are a group of Filipinos, allies, and concerned community
-                  members. We are women, youth, students, migrants, workers,
-                  professionals, and church people.{" "}
-                  <b>We knew that we would have to come together</b> to weather
-                  the storm of the COVID-19 pandemic.
-                </p>
-                <p>
-                  Kapit-Bisig Laban COVID is an effort initiated by BAYAN Canada
-                  in Toronto (including member organizations Migrante Ontario,
-                  Anakbayan Toronto, and GABRIELA Ontario) and Toronto Committee
-                  for Human Rights in the Philippines (TCHRP).
-                </p>
-                <p>
-                  These organizations support the democratic people's movement
-                  in the Philippines. We connect the struggles of the Filipino
-                  people back home to the struggles of migrant and diasporic
-                  Filipinos overseas.
-                </p>
-              </Column>
-            </Columns>
-          </Content>
-
           {/* Features section begins */}
         </Container>
       </Section>
