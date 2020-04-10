@@ -14,6 +14,7 @@ import {
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import ContactForm from "../components/contact"
 
 const About = () => (
   <Layout>
@@ -49,8 +50,13 @@ const About = () => (
             </Content>
 
             {/* Back to homepage button */}
-            <Link to="/" style={{ marginTop: "auto" }}>
-              <Button isColor="primary" className="is-rounded" id="is-spaced">
+            <Link to="/">
+              <Button
+                isColor="primary"
+                className="is-rounded"
+                id="is-spaced"
+                style={{ marginTop: 32 }}
+              >
                 <Icon className="fa fa-arrow-left fa-sm" />
                 <span>Go back to the homepage</span>
               </Button>

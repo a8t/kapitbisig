@@ -62,12 +62,26 @@ export default class navbar extends Component {
                 About
               </Link>
               <Link
+                to="/contact"
+                activeClassName="is-active"
+                className="navbar-link nav-item is-arrowless"
+              >
+                Contact
+              </Link>
+              <Link
+                to="/hotline"
+                activeClassName="is-active"
+                className="navbar-link nav-item is-arrowless"
+              >
+                Hotline
+              </Link>
+              {/* <Link
                 to="/resources"
                 activeClassName="is-active"
                 className="navbar-link nav-item is-arrowless"
               >
                 Resources
-              </Link>
+              </Link> */}
               {/* Github download button */}
               <NavbarItem>
                 <CallToAction />

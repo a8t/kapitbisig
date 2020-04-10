@@ -2,7 +2,6 @@ import React from "react"
 import PropTypes from "prop-types"
 import { Link, graphql } from "gatsby"
 import {
-  Section,
   Container,
   Title,
   Column,
@@ -20,6 +19,11 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Hero from "../components/hero"
 import { RequestAid, Volunteer } from "../components/callToAction"
+import ContactForm from "../components/contact"
+
+const Section = props => {
+  return <section style={{ paddingTop: 32, paddingBottom: 32 }} {...props} />
+}
 
 const IndexPage = ({ data }) => {
   const page = data.site.siteMetadata
@@ -73,8 +77,41 @@ const IndexPage = ({ data }) => {
               </Card>
             </Column>
           </Columns>
+          <Columns>
+            <Column isSize="1/2">
+              <Content>
+                <Section>
+                  <h3>Who are we?</h3>
+                  <p>
+                    We are a group of Filipinos, allies, and concerned community
+                    members. We are women, youth, students, migrants, workers,
+                    professionals, and church people.{" "}
+                    <b>We knew that we would have to come together</b> to
+                    weather the storm of the COVID-19 pandemic.
+                  </p>
+                  <Link to="/about">
+                    <Button isOutlined className="is-rounded" id="is-spaced">
+                      <span>Learn more</span>
+                      <Icon className="fa fa-arrow-right fa-sm" />
+                    </Button>
+                  </Link>
+                </Section>
 
-          {/* Features section begins */}
+                <Section>
+                  <h3>Contact us</h3>
+                  <p>
+                    If you have questions or concerns, please fill out the form
+                    on our
+                    <Link to="/contact"> Contact page</Link>.
+                  </p>
+                  <p>
+                    If you need help urgently, please{" "}
+                    <Link to="hotline">call our hotline</Link>.
+                  </p>
+                </Section>
+              </Content>
+            </Column>
+          </Columns>
         </Container>
       </Section>
     </Layout>
