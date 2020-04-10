@@ -18,7 +18,7 @@ const KapitBisigHero = ({ siteTitle, description }) => {
   const { logo } = useStaticQuery(
     graphql`
       query {
-        logo: file(relativePath: { eq: "web2.png" }) {
+        logo: file(relativePath: { eq: "logo.png" }) {
           childImageSharp {
             fluid(
               maxWidth: 900
@@ -45,6 +45,7 @@ const KapitBisigHero = ({ siteTitle, description }) => {
               <Img
                 fluid={logo.childImageSharp.fluid}
                 style={{ width: 400, maxWidth: "100%" }}
+                alt="Kapit-Bisig Logo"
               />
             </Column>
             <Column
