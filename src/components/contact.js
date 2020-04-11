@@ -44,6 +44,10 @@ export default function ContactForm() {
       >
         {/* You still need to add the hidden input with the form name to your JSX form */}
         <input type="hidden" name="form-name" value="contact" />
+        <label style={{ visibility: "hidden" }}>
+          Don’t fill this out if you're human:{" "}
+          <input name="bot-field" type="hidden" />
+        </label>
         <Field>
           <Label>Your name</Label>
 
